@@ -9,14 +9,14 @@ brain  Brain;
 
 // VEXcode device constructors
 motor leftMotorA = motor(PORT12, ratio18_1, true);
-motor leftMotorB = motor(PORT1, ratio18_1, false);
+motor leftMotorB = motor(PORT3, ratio18_1, false);
 motor_group LeftDriveSmart = motor_group(leftMotorA, leftMotorB);
 motor rightMotorA = motor(PORT20, ratio18_1, false);
-motor rightMotorB = motor(PORT10, ratio18_1, true);
+motor rightMotorB = motor(PORT8, ratio18_1, true);
 motor_group RightDriveSmart = motor_group(rightMotorA, rightMotorB);
 drivetrain Drivetrain = drivetrain(LeftDriveSmart, RightDriveSmart, 319.19, 295, 40, mm, 1);
-motor Roller = motor(PORT2, ratio36_1, false);
-motor Intake = motor(PORT7, ratio36_1, false);
+motor Roller = motor(PORT1, ratio36_1, false);
+motor Intake = motor(PORT10, ratio36_1, false);
 controller Controller1 = controller(primary);
 
 // VEXcode generated functions
